@@ -1,5 +1,5 @@
-# ltc-etch-and-sketch
+# ltc-etch-a-sketch
 
-Project: Etch and Sketch!
+Project: Etch a Sketch!
 
 **TO BE UPDATED**
