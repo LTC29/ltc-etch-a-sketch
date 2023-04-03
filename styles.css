@@ -1,0 +1,104 @@
+:root {
+  --numBox: 0;
+}
+
+* {
+  font-family: "Tillana", cursive;
+}
+
+/* Don't touch below */
+.box {
+  border: 1px solid #c4c4c4;
+  background-color: white;
+  box-sizing: border-box;
+  height: calc(700px / var(--numBox));
+  width: calc(700px / var(--numBox));
+}
+
+#box-container {
+  flex-direction: column;
+  width: 700px;
+  height: 700px;
+  border: 1px solid #c4c4c4;
+  box-shadow: 10px 10px 5px #e6dfca;
+}
+
+.row {
+  display: flex;
+  height: calc(100% / var(--numBox));
+  min-width: 100%;
+  width: 100%;
+}
+
+/* Don't touch above */
+
+.sizeButtons,
+.colorButtons {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sideToSide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+body {
+  background-color: #fdf6e2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  all: unset;
+  cursor: pointer;
+  font-size: 40px;
+  border: 2px #c4c4c4;
+  border-style: solid;
+}
+
+#colorBlack {
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px 5px #e6dfca;
+  padding: 5px;
+}
+
+#colorWhite {
+  background-color: white;
+  box-shadow: 5px 5px 5px #e6dfca;
+  padding: 5px;
+}
+
+.button:active,
+.active {
+  transform: translateY(5.5px);
+  filter: brightness(90%);
+}
+
+.sizeStuff {
+  box-shadow: 5px 5px 5px #e6dfca;
+  padding: 5px;
+  width: 91.05px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdf6e2;
+  font-size: 18px;
+}
+
+.colorStuff {
+  font-size: 18px;
+}
+
+.header {
+  font-size: 18px;
+}

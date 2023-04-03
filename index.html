@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Etch-a-Sketch</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Etch-a-Sketch!</h1>
+    </div>
+    <div class="instructions">
+      <ol>
+        <li>Choose the grid size</li>
+        <li>Choose the paint color</li>
+        <li>Draw away!</li>
+      </ol>
+    </div>
+    <div class="sideToSide">
+      <div class="theButtons">
+        <div class="sizeButtons">
+          <button class="button sizeStuff" id="btn16">16x16</button>
+          <button class="button sizeStuff" id="btn32">32x32</button>
+          <button class="button sizeStuff" id="btn64">64x64</button>
+        </div>
+      </div>
+      <div id="box-container"></div>
+      <div class="colorButtons">
+        <button class="button colorStuff" id="colorBlack">Black</button>
+        <button class="button colorStuff" id="colorWhite">White</button>
+      </div>
+    </div>
+    To reset, just press one of the grid buttons.
+  </body>
+  <script src="script.js"></script>
+</html>
