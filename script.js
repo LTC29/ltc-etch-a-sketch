@@ -1,5 +1,6 @@
 //Box creation section
 let finalColor;
+let borderColoring;
 
 const blackButton = document.querySelector("#colorBlack");
 const whiteButton = document.querySelector("#colorWhite");
@@ -9,12 +10,14 @@ const buttonSixtyFour = document.querySelector("#btn64");
 
 document.getElementById("colorBlack").addEventListener("click", function () {
   finalColor = "black";
+  borderColoring = "#3b3b3b";
   blackButton.classList.add("active");
   whiteButton.classList.remove("active");
 });
 
 document.getElementById("colorWhite").addEventListener("click", function () {
   finalColor = "white";
+  borderColoring = "#e7e7e7";
   whiteButton.classList.add("active");
   blackButton.classList.remove("active");
 });
@@ -61,6 +64,7 @@ function createBoxes(numBox) {
       let box = document.createElement("div");
       box.addEventListener("mouseover", function () {
         box.style.backgroundColor = finalColor;
+        box.style.borderColor = borderColoring;
       });
       box.setAttribute("class", "box");
       row.append(box); //appends boxes to row

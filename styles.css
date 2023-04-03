@@ -8,7 +8,7 @@
 
 /* Don't touch below */
 .box {
-  border: 1px solid #c4c4c4;
+  border: 1px solid #e7e7e7;
   background-color: white;
   box-sizing: border-box;
   height: calc(700px / var(--numBox));
@@ -19,7 +19,7 @@
   flex-direction: column;
   width: 700px;
   height: 700px;
-  border: 1px solid #c4c4c4;
+  border: 1px solid #e7e7e7;
   box-shadow: 10px 10px 5px #e6dfca;
 }
 
