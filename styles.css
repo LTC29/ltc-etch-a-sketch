@@ -80,7 +80,7 @@ body {
 
 .button:active,
 .active {
-  transform: translateY(5.5px);
+  transform: translateY(6px);
   filter: brightness(90%);
 }
 
